@@ -1,0 +1,264 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-text padding="0" />
+      <mj-all font-family="Inter" />
+      <mj-image padding="0" />
+      <mj-text
+        padding="0"
+        font-family="Inter"
+        font-size="16px"
+        font-style="normal"
+        font-weight="400"
+        line-height="22px"
+      />
+      <mj-class
+        name="title"
+        font-family="Inter"
+        font-size="20px"
+        font-style="normal"
+        font-weight="600"
+        line-height="26px"
+        letter-spacing="-0.4px"
+      />
+
+      <mj-class
+        name="section-title"
+        font-family="Inter"
+        font-size="26px"
+        font-style="normal"
+        font-weight="300"
+        line-height="34px"
+        letter-spacing="-0.78px"
+      />
+      <mj-class
+        name="button"
+        display="inline-flex"
+        cursor="pointer"
+        height="50px"
+        padding="16px 0"
+        flex-direction="column"
+        justify-content="center"
+        align-items="flex-start"
+        border-radius="12px"
+        font-family="Helvetica"
+        font-size="15px"
+        font-style="normal"
+        font-weight="700"
+        line-height="22px"
+      />
+
+      <mj-class name="bold" font-weight="500" />
+      <mj-class
+        name="eyebrow"
+        font-family="Inter"
+        font-size="14px"
+        font-style="normal"
+        font-weight="400"
+        line-height="22px"
+      />
+      <mj-class name="p-0" padding="0" />
+      <mj-class name="p-0_25" padding="0.25rem" />
+      <mj-class name="p-0_5" padding="0.5rem" />
+      <mj-class name="p-0_75" padding="0.75rem" />
+      <mj-class name="p-1" padding="1rem" />
+      <mj-class name="p-1_25" padding="1.25rem" />
+      <mj-class name="p-1_5" padding="1.5rem" />
+      <mj-class name="p-1_75" padding="1.75rem" />
+      <mj-class name="p-2" padding="2rem" />
+
+      <mj-class name="pt-0" padding-top="0" />
+      <mj-class name="pt-0_25" padding-top="0.25rem" />
+      <mj-class name="pt-0_5" padding-top="0.5rem" />
+      <mj-class name="pt-0_75" padding-top="0.75rem" />
+      <mj-class name="pt-1" padding-top="1rem" />
+      <mj-class name="pt-1_25" padding-top="1.25rem" />
+      <mj-class name="pt-1_5" padding-top="1.5rem" />
+      <mj-class name="pt-1_75" padding-top="1.75rem" />
+      <mj-class name="pt-2" padding-top="2rem" />
+
+      <mj-class name="pb-0" padding-bottom="0" />
+      <mj-class name="pb-0_25" padding-bottom="0.25rem" />
+      <mj-class name="pb-0_5" padding-bottom="0.5rem" />
+      <mj-class name="pb-0_75" padding-bottom="0.75rem" />
+      <mj-class name="pb-1" padding-bottom="1rem" />
+      <mj-class name="pb-1_25" padding-bottom="1.25rem" />
+      <mj-class name="pb-1_5" padding-bottom="1.5rem" />
+      <mj-class name="pb-1_75" padding-bottom="1.75rem" />
+      <mj-class name="pb-2" padding-bottom="2rem" />
+
+      <mj-class name="pl-0" padding-left="0" />
+      <mj-class name="pl-0_25" padding-left="0.25rem" />
+      <mj-class name="pl-0_5" padding-left="0.5rem" />
+      <mj-class name="pl-0_75" padding-left="0.75rem" />
+      <mj-class name="pl-1" padding-left="1rem" />
+      <mj-class name="pl-1_25" padding-left="1.25rem" />
+      <mj-class name="pl-1_5" padding-left="1.5rem" />
+      <mj-class name="pl-1_75" padding-left="1.75rem" />
+      <mj-class name="pl-2" padding-left="2rem" />
+
+      <mj-class name="pr-0" padding-right="0" />
+      <mj-class name="pr-0_25" padding-right="0.25rem" />
+      <mj-class name="pr-0_5" padding-right="0.5rem" />
+      <mj-class name="pr-0_75" padding-right="0.75rem" />
+      <mj-class name="pr-1" padding-right="1rem" />
+      <mj-class name="pr-1_25" padding-right="1.25rem" />
+      <mj-class name="pr-1_5" padding-right="1.5rem" />
+      <mj-class name="pr-1_75" padding-right="1.75rem" />
+      <mj-class name="pr-2" padding-right="2rem" />
+
+      <mj-class name="help" padding="40px 35px" />
+      <mj-class name="help-text" line-height="26px" />
+      <mj-class
+        name="footer-info"
+        color="var(--cv-theme-light-palettes-neutral-40, #5E7484)"
+        text-align="center"
+        font-family="Inter"
+        font-size="12px"
+        font-style="normal"
+        font-weight="400"
+        line-height="18px"
+      />
+    </mj-attributes>
+  </mj-head>
+  <mj-body css-class="body">
+    <mj-include path="./styles.css" type="css" css-inline="inline" />
+    <mj-section mj-class="p-0">
+      <mj-column width="100%">
+        <mj-image mj-class="p-0" src="./assets/tour-welcome-hero.svg" alt="" />
+      </mj-column>
+    </mj-section>
+    <mj-wrapper mj-class="p-0 pl-1_75 pr-1_75">
+      <mj-section mj-class="pt-1_25 pb-2">
+        <mj-column width="100%">
+          <mj-text
+            mj-class="section-title pb-1"
+            css-class="section-title color-slate-900 title"
+          >
+            Welcome to VantageCloud Lake
+          </mj-text>
+        </mj-column>
+        <mj-column width="100%">
+          <mj-text css-class="color-slate-900">
+            Hello {Name}, <br /><br />Thank you for joining VantageCloud Lake.
+            Your account is now ready for you to use. As an organization admin,
+            you also have an account on the Support Portal. The link to the
+            Support Portal is located under 'Resources to get you started' at
+            the bottom of this email.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="pt-1_5" css-class="border-top">
+        <mj-column>
+          <mj-text mj-class="section-title pb-0_5" css-class="section-title">
+            New to Teradata?
+          </mj-text>
+          <mj-text>
+            You first need to verify your email and create your password.
+          </mj-text>
+          <mj-button
+            mj-class="button pt-1_5"
+            css-class="button cta-button"
+            align="left"
+          >
+            Verify email and create your password →
+          </mj-button>
+          <mj-text mj-class="eyebrow" css-class="color-gray-500">
+            Existing Teradata user? <a href="'./hello.com" alt="">Login</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section css-class="border-bottom pb-2">
+        <mj-column width="100%">
+          <mj-text mj-class="title pb-0_75" css-class="title">
+            Your account information
+          </mj-text>
+        </mj-column>
+        <mj-column width="40%">
+          <mj-text mj-class="bold">Account name: </mj-text>
+        </mj-column>
+        <mj-column width="60%">
+          <mj-text>CREDIT SAISON </mj-text>
+        </mj-column>
+        <mj-column width="40%">
+          <mj-text mj-class="bold pt-0_25">Console URL: </mj-text>
+        </mj-column>
+        <mj-column width="60%">
+          <mj-text mj-class="pt-0_25"
+            >https://trcs.innovationlabs.teradata.com/</mj-text
+          >
+        </mj-column>
+        <mj-column width="40%">
+          <mj-text mj-class="bold pt-0_25">Username: </mj-text>
+        </mj-column>
+        <mj-column width="60%">
+          <mj-text mj-class="pt-0_25">name@gmail.com</mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="pt-2">
+        <mj-column width="100%">
+          <mj-text mj-class="section-title" css-class="section-title">
+            Resources to get you started
+          </mj-text>
+        </mj-column>
+        <mj-column width="100%">
+          <mj-text mj-class="bold list">
+            <ul>
+              <li><a href="" alt="">VantageCloud Lake Documentation</a></li>
+              <li><a href="" alt="">Support Portal</a></li>
+            </ul>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <mj-section mj-class="p-0">
+      <mj-column mj-class="help" css-class="bg-primary">
+        <mj-text mj-class="title color-white" css-class="color-white"
+          >Need help?</mj-text
+        >
+        <mj-text mj-class="pt-1 help-text" css-class="color-white">
+          After logging in, access the in-product help.
+        </mj-text>
+        <mj-text mj-class="pt-1_25 help-text" css-class="color-white">
+          Contact our
+          <a href="" alt="" mj-class="bold">Teradata Sales team</a> throughout
+          the duration of your trail if you have any questions.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section mj-class="p-0">
+      <mj-column mj-class="help" css-class="bg-gray-25" width="100%">
+        <mj-text
+          mj-class="footer-info"
+          css-class="color-gray-500"
+          align="center"
+        >
+          View our global <a href="" alt="">privacy policy</a>
+        </mj-text>
+
+        <mj-text
+          mj-class="footer-info pt-1 pb-1"
+          css-class="color-gray-500"
+          align="center"
+        >
+          Teradata Corporation 17095 Via Del Campo, San Diego, CA 92127, USA
+        </mj-text>
+
+        <mj-text
+          mj-class="footer-info bold"
+          css-class="color-gray-500"
+          align="center"
+        >
+          <a href="" alt="">www.teradata.com</a>
+        </mj-text>
+        <mj-text
+          mj-class="footer-info"
+          css-class="color-gray-500"
+          align="center"
+        >
+          Copyright © 2024, Teradata Corporation
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

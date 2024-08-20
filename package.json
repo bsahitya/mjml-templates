@@ -1,0 +1,26 @@
+{
+  "name": "mjml-templates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-tokens": "postcss covalent-tokens.scss -o covalent-tokens.css",
+    "build-css": "postcss styles.scss -o styles.css",
+    "build-styles": "npm run build-tokens && npm run build-css",
+    "start": "mjml --watch welcome-letter.mjml -o welcome-letter.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@covalent/tokens": "^8.20.0"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.41",
+    "postcss-cli": "^11.0.0",
+    "postcss-css-variables": "^0.19.0",
+    "postcss-import": "^16.1.0",
+    "postcss-preset-env": "^10.0.2",
+    "sass": "^1.77.8"
+  }
+}
