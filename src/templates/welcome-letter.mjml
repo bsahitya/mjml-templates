@@ -2,11 +2,12 @@
   <mj-head>
     <mj-attributes>
       <mj-text padding="0" />
-      <mj-all font-family="Inter" />
-      <mj-image padding="0" />
+      <mj-all
+        font-family="Inter, 'Open Sans', 'Helvetica Neue', sans-serif, -apple-system"
+      />
+
       <mj-text
         padding="0"
-        font-family="Inter"
         font-size="16px"
         font-style="normal"
         font-weight="400"
@@ -14,7 +15,6 @@
       />
       <mj-class
         name="title"
-        font-family="Inter"
         font-size="20px"
         font-style="normal"
         font-weight="600"
@@ -24,7 +24,6 @@
 
       <mj-class
         name="section-title"
-        font-family="Inter"
         font-size="26px"
         font-style="normal"
         font-weight="300"
@@ -33,13 +32,8 @@
       />
       <mj-class
         name="button"
-        display="inline-flex"
-        cursor="pointer"
         height="50px"
         padding="16px 0"
-        flex-direction="column"
-        justify-content="center"
-        align-items="flex-start"
         border-radius="12px"
         font-family="Helvetica"
         font-size="15px"
@@ -48,10 +42,9 @@
         line-height="22px"
       />
 
-      <mj-class name="bold" font-weight="500" />
+      <mj-class name="bold" font-weight="600" />
       <mj-class
         name="eyebrow"
-        font-family="Inter"
         font-size="14px"
         font-style="normal"
         font-weight="400"
@@ -111,9 +104,7 @@
       <mj-class name="help-text" line-height="26px" />
       <mj-class
         name="footer-info"
-        color="var(--cv-theme-light-palettes-neutral-40, #5E7484)"
         text-align="center"
-        font-family="Inter"
         font-size="12px"
         font-style="normal"
         font-weight="400"
@@ -122,10 +113,14 @@
     </mj-attributes>
   </mj-head>
   <mj-body css-class="body">
-    <mj-include path="./styles.css" type="css" css-inline="inline" />
+    <mj-include path="src/styles/styles.css" type="css" css-inline="inline" />
     <mj-section mj-class="p-0">
       <mj-column width="100%">
-        <mj-image mj-class="p-0" src="./assets/tour-welcome-hero.svg" alt="" />
+        <mj-image
+          mj-class="p-0"
+          src="https://cdn.jsdelivr.net/gh/bsahitya/mjml-templates/assets/tour-welcome-hero.png"
+          alt=""
+        />
       </mj-column>
     </mj-section>
     <mj-wrapper mj-class="p-0 pl-1_75 pr-1_75">
@@ -140,7 +135,7 @@
         </mj-column>
         <mj-column width="100%">
           <mj-text css-class="color-slate-900">
-            Hello {Name}, <br /><br />Thank you for joining VantageCloud Lake.
+            Hello Sahitya, <br /><br />Thank you for joining VantageCloud Lake.
             Your account is now ready for you to use. As an organization admin,
             you also have an account on the Support Portal. The link to the
             Support Portal is located under 'Resources to get you started' at
@@ -158,17 +153,19 @@
           </mj-text>
           <mj-button
             mj-class="button pt-1_5"
-            css-class="button cta-button"
+            css-class="cta-button color-white"
             align="left"
+            href="#"
           >
             Verify email and create your password →
           </mj-button>
+
           <mj-text mj-class="eyebrow" css-class="color-gray-500">
             Existing Teradata user? <a href="'./hello.com" alt="">Login</a>
           </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section css-class="border-bottom pb-2">
+      <mj-section mj-class="pb-2" css-class="border-bottom">
         <mj-column width="100%">
           <mj-text mj-class="title pb-0_75" css-class="title">
             Your account information
@@ -202,10 +199,18 @@
           </mj-text>
         </mj-column>
         <mj-column width="100%">
-          <mj-text mj-class="bold list">
+          <mj-text mj-class="bold" css-class="list">
             <ul>
-              <li><a href="" alt="">VantageCloud Lake Documentation</a></li>
-              <li><a href="" alt="">Support Portal</a></li>
+              <li>
+                <a href="https://docs.teradata.com/p/VantageCloud/Lake" alt=""
+                  >VantageCloud Lake Documentation</a
+                >
+              </li>
+              <li>
+                <a href="https://support.teradata.com/csm" alt=""
+                  >Support Portal</a
+                >
+              </li>
             </ul>
           </mj-text>
         </mj-column>
@@ -221,7 +226,7 @@
         </mj-text>
         <mj-text mj-class="pt-1_25 help-text" css-class="color-white">
           Contact our
-          <a href="" alt="" mj-class="bold">Teradata Sales team</a> throughout
+          <a href="#" alt="" mj-class="bold">Teradata Sales team</a> throughout
           the duration of your trail if you have any questions.
         </mj-text>
       </mj-column>
@@ -233,7 +238,8 @@
           css-class="color-gray-500"
           align="center"
         >
-          View our global <a href="" alt="">privacy policy</a>
+          View our global
+          <a href="https://www.teradata.com/privacy" alt="">privacy policy</a>
         </mj-text>
 
         <mj-text
@@ -249,7 +255,7 @@
           css-class="color-gray-500"
           align="center"
         >
-          <a href="" alt="">www.teradata.com</a>
+          <a href="www.teradata.com" alt="">www.teradata.com</a>
         </mj-text>
         <mj-text
           mj-class="footer-info"

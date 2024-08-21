@@ -4,18 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-tokens": "postcss covalent-tokens.scss -o covalent-tokens.css",
-    "build-css": "postcss styles.scss -o styles.css",
+    "build-tokens": "postcss src/styles/covalent-tokens.scss -o src/styles/covalent-tokens.css",
+    "build-css": "postcss src/styles/styles.scss -o src/styles/styles.css",
     "build-styles": "npm run build-tokens && npm run build-css",
-    "start": "mjml --watch welcome-letter.mjml -o welcome-letter.html"
+    "convert-mjml": "node src/scripts/convert-mjml.js",
+    "watch": "nodemon --watch src/templates --watch src/styles --ext mjml,scss --exec \"npm run convert-mjml\"",
+    "send-mail": "node src/scripts/send-email.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@covalent/tokens": "^8.20.0"
+    "@covalent/tokens": "^8.20.0",
+    "dotenv": "^16.4.5",
+    "google-auth-library": "^9.14.0",
+    "nodemailer-mjml": "^1.4.0"
   },
   "devDependencies": {
+    "nodemon": "^3.1.4",
     "postcss": "^8.4.41",
     "postcss-cli": "^11.0.0",
     "postcss-css-variables": "^0.19.0",

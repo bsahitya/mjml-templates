@@ -1,0 +1,5 @@
+{
+  "watch": ["src/styles", "src/templates"],
+  "ext": "scss,mjml",
+  "exec": "npm run build-styles && npm run start"
+}
