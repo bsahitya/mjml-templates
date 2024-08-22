@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-tokens": "postcss src/styles/covalent-tokens.scss -o src/styles/covalent-tokens.css",
     "build-css": "postcss src/styles/styles.scss -o src/styles/styles.css",
-    "build-styles": "npm run build-tokens && npm run build-css",
+    "build-styles": "npm run build-css",
     "convert-mjml": "node src/scripts/convert-mjml.js",
     "watch": "nodemon --watch src/templates --watch src/styles --ext mjml,scss --exec \"npm run convert-mjml\"",
     "send-mail": "node src/scripts/send-email.js"
